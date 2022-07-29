@@ -1,4 +1,4 @@
-FROM postgres:14.1
+FROM postgis/postgis:14-3.2
 MAINTAINER asi@dbca.wa.gov.au
 LABEL org.opencontainers.image.source https://github.com/dbca-wa/postgres-oracle-fdw
 

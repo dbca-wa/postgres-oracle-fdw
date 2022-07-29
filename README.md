@@ -1,7 +1,8 @@
 # Overview
 
 Docker image to extend the stock PostgreSQL image with Oracle database client
-libraries and Foreign Data Wrapper support.
+libraries and Foreign Data Wrapper support. The image also includes PostGIS
+extensions.
 
 # Instructions
 
