@@ -16,5 +16,5 @@ repository:
 Build the image like so:
 
 ```console
-docker build --tag ghcr.io/dbca-wa/postgres-oracle-fdw:14.1 .
+docker build --tag ghcr.io/dbca-wa/postgres-oracle-fdw .
 ```
