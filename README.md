@@ -11,7 +11,7 @@ repository:
 
 * `instantclient-basic-linux.x64-19.21.0.0.0dbru.zip`: https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
 * `instantclient-sdk-linux.x64-19.21.0.0.0dbru.zip`: https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
-* `ORACLE_FDW_2_6_0.zip`: https://github.com/laurenz/oracle_fdw/releases/tag/ORACLE_FDW_2_4_0
+* `ORACLE_FDW_2_6_0.zip`: https://github.com/laurenz/oracle_fdw/releases/
 
 Build the image like so:
 
