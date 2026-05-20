@@ -37,8 +37,18 @@ jobs:
         uses: docker/metadata-action@030e881283bb7a6894de51c315a6bfe6a94e05cf # v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          flavor: |
-            latest=true
+          annotations: |
+            type=org.opencontainers.image.description,value=${{ github.event.repository.description || 'No description provided' }}
+          # Image tags
+          # latest → default branch (main)
+          # Semantic versions from Git tags (v1.2.3)
+          # Always add commit SHA
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=dev,event=branch,branch=dev
+            type=semver,pattern={{version}}
+            type=sha
+
       - name: Set up Docker context for Buildx
         id: buildx-context
         run: |
