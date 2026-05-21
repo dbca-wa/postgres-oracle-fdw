@@ -5,7 +5,7 @@ WORKDIR /downloads
 RUN wget -q --no-check-certificate https://github.com/laurenz/oracle_fdw/archive/refs/tags/ORACLE_FDW_2_8_0.zip\
   && wget -q --no-check-certificate https://download.oracle.com/otn_software/linux/instantclient/1931000/instantclient-basic-linux.x64-19.31.0.0.0dbru.zip \
   && wget -q --no-check-certificate https://download.oracle.com/otn_software/linux/instantclient/1931000/instantclient-sdk-linux.x64-19.31.0.0.0dbru.zip \
-  && for file in `ls /downloads/*.zip`; do unzip -o $file -d /opt/; done
+  && for file in `ls /downloads/*.zip`; do unzip -q -o $file -d /opt/; done
 
 ##################################################################################
 
