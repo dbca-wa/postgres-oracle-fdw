@@ -42,11 +42,9 @@ jobs:
           # Image tags
           # latest → default branch (main)
           # Semantic versions from Git tags (v1.2.3)
-          # Always add commit SHA
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
-            type=sha
 
       - name: Set up Docker context for Buildx
         id: buildx-context
